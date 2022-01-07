@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1>Titulo h1 {{$nome}}</h1>
+<h1>Titulo h1</h1>
 
 <img src="/img/banner.jpg" alt="Banner">
 
