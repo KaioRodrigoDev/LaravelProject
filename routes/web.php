@@ -20,5 +20,15 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', function(){
+
+    
+
     return view('contact');
+});
+
+Route::get('/product/{id?}', function($id = null){
+
+    $busca = request('search');
+
+    return view('product', ['id' => $id, 'busca'=>$busca]);
 });
