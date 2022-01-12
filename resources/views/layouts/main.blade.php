@@ -24,7 +24,7 @@
     </head>
     <body>
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id='navtest'>
           <div class="collapse navbar-collapse" id="navbar">
             <a href="/" class="navbar-brand">
               <img src="/img/hdcevents_logo.svg" alt="HDC Events">
