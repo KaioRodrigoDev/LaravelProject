@@ -9,6 +9,7 @@
 <h1>Crie o seu evento</h1>
 
 <form action="/events" method="POST">
+  @csrf
   <div class="form-group">
     <label for="tite">Evento: </label>
     <input type="text" class="form-control" name="title" id="title" placeholder="Nome do evento">
