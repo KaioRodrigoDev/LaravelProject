@@ -22,7 +22,7 @@
     <div class="card col-md-3">
       <img src="/img/events/{{$event->image}}" alt="{{$event->title}}">
       <div class="card-body">
-        <p class='card-date'>02/06/2003</p>
+        <p class='card-date'>{{$event->date->format('d/m/Y')}}</p>
         <h5 class="card-title">{{$event->title}}</h6>
         <p class="card-participants">X participantes</p>
         <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
@@ -30,6 +30,10 @@
     </div>
 
     @endforeach
+    @if (count($events) == 0)
+      <p>Não ha eventos disponiveis</p>
+
+    @endif
   </div>
 </div>
 @endsection
