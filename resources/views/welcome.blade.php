@@ -38,7 +38,8 @@
     @if (count($events) == 0 && $search)
       <p>Nenhum evento em relação a: {{$search}} !<a href="/">Ver todos</a></p>
     @elseif(count($events) == 0)
-      <p>Não ha eventos disponiveis</p>
+      <p>Não ha eventos disponiveis</p> 
+
     @endif
   </div>
 </div>
